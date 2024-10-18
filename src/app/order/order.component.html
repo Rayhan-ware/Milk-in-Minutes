@@ -1,0 +1,64 @@
+<div class="order-details">
+    <h2>Order Details</h2>
+    <div>
+      <p><strong>Item Name:</strong> {{ selectedProduct?.name }}</p>
+      <p><strong>Category:</strong> {{ selectedProduct?.category }}</p>
+      <p><strong>Description:</strong> {{ selectedProduct?.description }}</p>
+      <p><strong>Price:</strong> {{ selectedProduct?.price | currency }}</p>
+      <p><strong>Quantity:</strong> <input type="number" [(ngModel)]="quantity" (input)="calculateTotalPrice()" min="1"></p>
+      <p><strong>Total Price:</strong> {{ totalPrice | currency }}</p>
+      <hr>
+      <h2>Customer Details</h2>
+      <div>
+        <mat-form-field appearance="fill" class="custom-margin-right">
+          <mat-label>Name</mat-label>
+          <input matInput type="text" [(ngModel)]="customerName" [formControl]="customerDetailsForm.get('customerName')">
+          <mat-error *ngIf="customerDetailsForm.get('customerName')?.errors?.required">
+            Name is required
+          </mat-error>
+          <mat-error *ngIf="customerDetailsForm.get('customerName')?.errors?.minlength">
+            Name should be at least 3 characters
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="custom-margin-right">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" [(ngModel)]="customerEmail" [formControl]="customerDetailsForm.get('customerEmail')"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            <mat-error *ngIf="customerDetailsForm.get('customerEmail')?.errors?.required">
+              Email is required
+            </mat-error>
+            <mat-error *ngIf="customerDetailsForm.get('customerEmail')?.errors?.pattern">
+              Invalid email format
+            </mat-error>
+          </mat-form-field>
+  
+        <mat-form-field appearance="fill" class="custom-margin-right">
+          <mat-label>Phone Number</mat-label>
+          <input matInput type="text" [(ngModel)]="customerPhone" [formControl]="customerDetailsForm.get('customerPhone')">
+          <mat-error *ngIf="customerDetailsForm.get('customerPhone')?.errors?.required">
+            Phone Number is required
+          </mat-error>
+          <mat-error *ngIf="customerDetailsForm.get('customerPhone')?.errors?.pattern">
+            Invalid phone number format
+          </mat-error>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Address</mat-label>
+          <input matInput type="text" [(ngModel)]="customerAddress" [formControl]="customerDetailsForm.get('customerAddress')">
+          <mat-error *ngIf="customerDetailsForm.get('customerAddress')?.errors?.required">
+            Address is required
+          </mat-error>
+          <mat-error *ngIf="customerDetailsForm.get('customerAddress')?.errors?.minlength">
+            Address should be at least 4 characters
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <button mat-raised-button color="primary" (click)="placeOrder()"
+        [ngClass]="{'disabled-button': !customerDetailsForm.valid}">
+  Place Order
+</button>
+  </div>
+  

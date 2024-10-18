@@ -1,0 +1,124 @@
+{
+  "dairyProducts": [
+    {
+      "id": "1",
+      "name": "Milk",
+      "category": "Milk",
+      "description": "Fresh milk from organic farms",
+      "price": 10,
+      "imageUrl": "assets/milk.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Cheese",
+      "category": "Cheese",
+      "description": "Handcrafted artisanal cheese",
+      "price": 20,
+      "imageUrl": "assets/cheese.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Yogurt",
+      "category": "Yogurt",
+      "description": "Creamy Greek yogurt",
+      "price": 25,
+      "imageUrl": "assets/yogurt.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Butter",
+      "category": "Butter",
+      "description": "Farm-fresh creamy butter",
+      "price": 30,
+      "imageUrl": "assets/butter.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Toned Milk",
+      "category": "Milk",
+      "description": "Toned milk is a method, developed in India, of treating buffalo milk by adding skim milk, powdered skim milk and water to buffalo milk",
+      "price": 15,
+      "imageUrl": "assets/toned.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Cheese-Cheddar",
+      "category": "Cheese",
+      "description": "Handcrafted artisanal cheese",
+      "price": 23,
+      "imageUrl": "assets/cheese-cheddar.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": "5b5e",
+      "productId": "2",
+      "productName": "Cheese",
+      "productCategory": "Cheese",
+      "productPrice": 20,
+      "productDescription": "Handcrafted artisanal cheese",
+      "quantity": 3,
+      "totalPrice": 60,
+      "customerName": "ray",
+      "customerEmail": "ray@gmail.com",
+      "customerPhone": "9876543210",
+      "customerAddress": "asdffgjkk"
+    },
+    {
+      "id": "7d19",
+      "productId": "1",
+      "productName": "Milk",
+      "productCategory": "Milk",
+      "productPrice": 10,
+      "productDescription": "Fresh milk from organic farms",
+      "quantity": 2,
+      "totalPrice": 20,
+      "customerName": "aaaa",
+      "customerEmail": "sss@gmail.com",
+      "customerPhone": "9876543210",
+      "customerAddress": "asssdsd"
+    },
+    {
+      "id": "3d0d",
+      "productId": "6",
+      "productName": "Cheese-Cheddar",
+      "productCategory": "Cheese",
+      "productPrice": 23,
+      "productDescription": "Handcrafted artisanal cheese",
+      "quantity": 1,
+      "totalPrice": 23,
+      "customerName": "arun",
+      "customerEmail": "a@gmail.com",
+      "customerPhone": "9876543221",
+      "customerAddress": "kolkata"
+    },
+    {
+      "id": "7815",
+      "productId": "1",
+      "productName": "Milk",
+      "productCategory": "Milk",
+      "productPrice": 10,
+      "productDescription": "Fresh milk from organic farms",
+      "quantity": 3,
+      "totalPrice": 30,
+      "customerName": "John",
+      "customerEmail": "Cena@www.com",
+      "customerPhone": "9876543233",
+      "customerAddress": "delhi"
+    },
+    {
+      "id": "03c1",
+      "productId": "1",
+      "productName": "Milk",
+      "productCategory": "Milk",
+      "productPrice": 10,
+      "productDescription": "Fresh milk from organic farms",
+      "quantity": 4,
+      "totalPrice": 40,
+      "customerName": "ray",
+      "customerEmail": "ray@gmail.com",
+      "customerPhone": "9876543210",
+      "customerAddress": "udupi"
+    }
+  ]
+}

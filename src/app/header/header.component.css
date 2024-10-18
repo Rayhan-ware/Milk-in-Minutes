@@ -1,0 +1,8 @@
+.spacer {
+    flex: 1; /* Use flex-grow to push buttons to the right */
+  }
+  
+  .button-container {
+    display: flex;
+    align-items: center;
+  }

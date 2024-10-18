@@ -1,0 +1,14 @@
+<!-- header.component.html -->
+<mat-toolbar color="primary">
+  <span>Milk In Minutes</span>
+  <div class="spacer"></div> <!-- Add a spacer to push buttons to the right -->
+  <div class="button-container">
+    <button mat-icon-button (click)="navigateToHome()">
+      <mat-icon>home</mat-icon>
+    </button>
+
+    <button mat-icon-button routerLink="/login">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

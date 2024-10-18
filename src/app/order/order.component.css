@@ -1,0 +1,7 @@
+.disabled-button {
+    opacity: 0.5; /* Reduce opacity to visually indicate that the button is disabled */
+    cursor: not-allowed; /* Change cursor to not-allowed to indicate that the button is not clickable */
+  }
+  .custom-margin-right {
+    margin-right: 10px; /* Adjust the value as needed */
+  }
